@@ -37,6 +37,7 @@ client.on('messageCreate', (message) => {
         message.channel.send(dados.piada[random])
     }
 
+    //gerador de frases aleatorias
     if(message.content === "!frase"){
         const random = Math.floor(Math.random() * dados.frases.length);
         message.channel.send(dados.frases[random])
